@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap');
+:root{
+    --color-bg:#581845;
+    --color-primario:#900c3f;
+    --color-secundario:#c70039;
+    --color-terciario:#ff5733;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Kanit;
+    outline: none;
+    box-sizing: border-box;
+ 
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-bg);
+}
+#img-error{
+    margin-top: 10px;
+    height: 150px;
+    background-color: wheat;
+    border-radius: 10px;
+}
+img{
+    height: 150px;
+     
+}
+.contenedor{
+    position: relative;
+    width: 400px;
+    height: 105px;
+    background-color: var(--color-primario);
+    padding: 28px 32px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: .6s ease-out;
+    
+}
+.buscar-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ 
+.buscar-box input{
+    width: 90%;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 20px;
+    border-radius: 10px;
+    background-color: var(--color-terciario);
+}
+.buscar-box input::placeholder{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    text-transform: capitalize;
+}
+
+.buscar-box button{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-secundario);
+    border-radius: 50%;
+    font-size: 22px;
+    transition: .4s ease;
+    margin-left:10px ;
+}
+.buscar-box button:hover{
+    color: white;
+    background-color: var(--color-terciario);
+}
+.buscar-box i{
+    position: absolute;
+    font-size: 20px;
+    padding-left: 3px;
+}
+.clima-box{
+    margin : 10px;
+    padding-bottom: 10px;
+     
+    text-align: center;
+    background-color: wheat;
+    border-radius: 10px;
+
+}
+.clima-box .temperatura{
+    position: relative;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: -16px;
+}
+.clima-box .temperatura span{
+    position: absolute;
+    margin-left: 4px;
+    font-size: 1.5rem;
+     
+}
+.clima-box .descripcion{
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.clima-info {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    margin-top: 30px;
+}
+
+.clima-info .humedad,.clima-info .viento{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100px;
+    background-color: wheat;
+    border-radius : 10px ;
+    margin : 10px;
+}
+.clima-info .humedad{
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+.clima-info .viento{
+    padding-right: 20px;
+    justify-content: flex-end;
+}
+.clima-info i{
+    font-size: 26px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.clima-info span{
+    font-size: 22px;
+    font-weight: 500;
+
+}
+
+.clima-info p{
+    font-size: 14px;
+    font-weight: 500;
+}
+.no-encontrado{
+    text-align: center;
+    margin-top: 50px;
+    scale: 0;
+    opacity: 0;
+    display: none;
+}
+.no-encontrado p{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+.clima-box, .clima-info{
+    scale: 0;
+    opacity: 0;
+}
+.fadeIn{
+    animation: .5s fadeIn forwards;
+    animation-delay: .5s;
+}
+@keyframes fadeIn{
+    to{
+        scale: 1;
+        opacity: 1;
+    }
+}

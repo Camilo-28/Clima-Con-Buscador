@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+     
+
+    <title>Clima Con Buscador</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="buscar-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Elige el lugar">
+            <button class="fa-solid fa-magnifying-glass"></button>
+            
+        </div>
+
+        <div class="no-encontrado">
+            <img id="img-error" src="404.png" alt="">
+            <p>No se a encontrado nada :c</p>
+        </div>
+
+        <div class="clima-box">
+            <img src="" alt="">
+            <p class="temperatura"></p>
+            <p class="descripcion"></p>
+        </div>
+
+        <div class="clima-info">
+            <div class="humedad">
+                <i class="fa-solid fa-water"></i>
+                <div class="texto">
+                    <span></span>
+                    <p>Humedad</p>
+                </div>
+            </div>
+            <div class="viento">
+                <i class="fa-solid fa-wind"></i>
+                <div class="texto">
+                    <span></span>
+                    <p>viento</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
